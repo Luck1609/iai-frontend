@@ -5,7 +5,7 @@ import { Mail, People, Call } from '@assets/img/svg'
 
 export default function Footer() {
   return (
-    <footer className="w-full flex justify-center bg-default-blue text-white py-40">
+    <footer className="w-full flex justify-center bg-default-blue text-white py-20">
       <div className="w-full max-w-5xl grid grid-cols-4 gap-8">
         <div className="w-full">
           <img src={images.logo} alt="IAI logo" className="w-44" />

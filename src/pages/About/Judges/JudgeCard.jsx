@@ -9,17 +9,15 @@ export default function JudgeCard({ img, title, name, content }) {
         <img src={img} alt="Judge" className="w-[280px]" />
 
         <div className="w-full p-10">
-          <span className="font-medium block mb-2 text-[#57CAF1] uppercase">
-            { title }
+          <span className="font-medium block mb-2 text-heading2 uppercase">
+            {title}
           </span>
-          <h5 className="font-semibold text-3xl text-heading mb-5">
-            { name }
-          </h5>
-          <p className="">
-            { content }
-          </p>
+          <h5 className="font-semibold text-3xl text-heading mb-5">{name}</h5>
+          <p className="">{content}</p>
 
-          <Link url="/" className="flex items-center text-[#57CAF1] mt-3">See full bio <ArrowRight /></Link>
+          <Link url="/" className="flex items-center text-heading2 mt-3">
+            See full bio <ArrowRight />
+          </Link>
         </div>
       </div>
     </div>
