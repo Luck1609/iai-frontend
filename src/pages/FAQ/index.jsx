@@ -6,7 +6,7 @@ import Questions from "./Questions";
 export default function Faq() {
   return (
     <div className="bg-[#FCF0F0] pb-16">
-      <Hero />
+      <Hero title="Let's answer all your questions." />
       <FaqInfo />
       <Questions />
     </div>

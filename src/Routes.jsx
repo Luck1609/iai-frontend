@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "@layouts/UserLayout";
 import Home from "@pages/Home";
 import About from "@pages/About";
@@ -11,12 +11,14 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
+        <Route  element={<Layout />}>
+          <Route path="/home" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/contact-us" element={<Contact />} />
+
+          <Route path="/" element={<Navigate to="/home" />} />
         </Route>
       </Routes>
     </BrowserRouter>
