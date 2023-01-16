@@ -16,6 +16,9 @@ module.exports = {
         "mechanic": "url('/img/mechanic_bg.jpg')",
         "about": "url('/img/about_bg.jpg')",
         "contact": "url('/img/contact_bg.jpg')",
+        "market": "url('/img/market_short.jpg')",
+        "lady": "url('/img/lady.png')",
+        "tailor": "url('/img/tailor.png')",
       }
     },
   },

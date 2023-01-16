@@ -12,12 +12,22 @@ export default function Navbar() {
         </Link>
       
         <ul className="flex items-center">
-          <li className="mx-5 py-3">Home</li>
-          <li className="mx-5 py-3">About us</li>
-          <li className="mx-5 py-3">FAQ</li>
-          <li className="mx-5 py-3">Blog</li>
-          <li className="mx-5 py-3">Contact us</li>
-          <li className="mx-5 py-3">
+          <li className="mx-5">
+            <Link url="/" className="py-3 block text-white">Home</Link>
+          </li>
+          <li className="mx-5">
+            <Link url="/about-us" className="py-3 block text-white">About us</Link>
+          </li>
+          <li className="mx-5">
+            <Link url="/faq" className="py-3 block text-white">FAQ</Link>
+          </li>
+          <li className="mx-5">
+            <Link url="/blog" className="py-3 block text-white">Blog</Link>
+          </li>
+          <li className="mx-5">
+            <Link url="/contact-us" className="py-3 block text-white">Contact us</Link>
+          </li>
+          <li className="mx-5">
             <Btn content="Apply Now" className="bg-[#1C2BE5]" />
           </li>
           {/* <li className="mx-5 py-3">
