@@ -1,4 +1,5 @@
 import logo from "./logo.png";
+import logo_2 from "./logo_2.jpg";
 import logo_red from "./logo_red.png";
 import judge_1 from "./judge_1.jpg";
 import judge_1_short from "./judge_1_short.jpg";
@@ -18,6 +19,7 @@ import market from "./market.jpg";
 
 export const images = {
   logo, 
+  logo_2, 
   logo_red,
   judge_1,
   judge_1_short,

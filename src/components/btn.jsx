@@ -28,7 +28,7 @@ export const FormBtn = ({
   return (
     <Button
       variant="contained"
-      className={`${className} shadow-none hover:shadow-none focus:outline-none ${rounded ? "rounded-full" : ""}`}
+      className={`${className} shadow-none hover:shadow-none focus:outline-none`}
       type="submit"
       disabled={ disabled }
       style={{ textTransform: "none"}}
