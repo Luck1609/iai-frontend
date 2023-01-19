@@ -1,11 +1,11 @@
 import React from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { FormProvider, useForm } from "react-hook-form";
 import { FormBtn } from "@components/Btn";
 import Input from "@components/Input";
 import PhoneNumberInput from "@components/PhoneNumberInput";
 import Textarea from "@components/Textarea";
 import { contact_form_validation } from "@helpers/validations";
-import { FormProvider, useForm } from "react-hook-form";
 
 export default function ContactForm() {
   const methods = useForm({

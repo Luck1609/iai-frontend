@@ -1,8 +1,8 @@
-import { FormBtn } from "@components/Btn";
+import React from "react";
 // import Input from '@components/Input'
 import { ArrowForward } from "@mui/icons-material";
-import React from "react";
 import { FormProvider, useForm } from "react-hook-form";
+import { FormBtn } from "@components/Btn";
 
 export default function ContactComponent() {
   const methods = useForm();

@@ -1,5 +1,5 @@
-import { MoneySend } from '@assets/img/svg'
-import React from 'react'
+import React from "react";
+import { MoneySend } from "@assets/img/svg";
 
 export default function Services() {
   return (

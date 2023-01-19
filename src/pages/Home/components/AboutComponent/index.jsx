@@ -1,7 +1,7 @@
-import React from 'react'
-import Info from './Info'
-import Stats from './Stats'
-import VideoComponent from './VideoComponent'
+import React from "react";
+import Info from "./Info";
+import Stats from "./Stats";
+import VideoComponent from "./VideoComponent";
 
 export default function AboutComponent() {
   return (
@@ -12,5 +12,5 @@ export default function AboutComponent() {
         <VideoComponent />
       </div>
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import { Btn } from "@components/Btn";
 import React from "react";
+import { Btn } from "@components/Btn";
 
 export default function AboutInfo() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { PlayArrow } from "@mui/icons-material";
+// import { PlayArrow } from "@mui/icons-material";
 import CustomAccordion from "@components/Accordion";
 
 export default function Questions() {

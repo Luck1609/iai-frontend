@@ -1,7 +1,7 @@
-import { images } from "@assets/img/images";
-// import { ArrowLeft, ArrowRight } from "@mui/icons-material";
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { images } from "@assets/img/images";
+// import { ArrowLeft, ArrowRight } from "@mui/icons-material";
 
 
 export default class SimpleSlider extends Component {

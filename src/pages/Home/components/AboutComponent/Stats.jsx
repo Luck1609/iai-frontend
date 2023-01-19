@@ -1,5 +1,5 @@
-import { Building, Buildings, Persons, UserOcta } from '@assets/img/svg'
-import React from 'react'
+import React from "react";
+import { Building, Buildings, Persons, UserOcta } from "@assets/img/svg";
 
 export default function Stats() {
   return (
@@ -36,5 +36,5 @@ export default function Stats() {
         </div>
       </div>
     </div>
-  )
+  );
 }
