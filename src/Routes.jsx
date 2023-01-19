@@ -10,6 +10,7 @@ import Login from "@pages/auth/Login";
 import ForgotPassword from "@pages/auth/ForgotPassword";
 import ResetPassword from "@pages/auth/ResetPassword";
 import ApplicationForm from "@pages/Apply";
+import AdminLayout from "@layouts/AdminLayout";
 
 function App() {
 
@@ -27,11 +28,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home" />} />
         </Route>
 
-        <Route element={<AdminGuestLayout />}>
-          <Route path="/login" element={<Login />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/reset-password" element={<ResetPassword />} />
-        </Route>
+        <Route path="admin/*" element={<AdminLayout />} />
       </Routes>
     </BrowserRouter>
   );

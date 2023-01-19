@@ -1,5 +1,5 @@
 import logo from "./logo.png";
-import logo_2 from "./logo_2.jpg";
+import logo_2 from "./logo_2.png";
 import logo_red from "./logo_red.png";
 import judge_1 from "./judge_1.jpg";
 import judge_1_short from "./judge_1_short.jpg";

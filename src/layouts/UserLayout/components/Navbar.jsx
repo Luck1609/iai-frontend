@@ -34,7 +34,7 @@ export default function Navbar() {
                 <Link  url={link} className={`py-3 hover:text-red-500 
                   ${ active 
                     ? "text-red-500" 
-                    : switcBackground 
+                    : (switcBackground || pathname === "/apply") 
                       ? "text-black" 
                       : "text-white"
                   } block font-medium

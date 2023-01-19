@@ -13,8 +13,8 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="w-full flex justify-center bg-default-blue text-white py-20">
-      <div className="w-full max-w-5xl grid grid-cols-4 gap-8">
+    <footer className="w-full flex justify-center bg-default-blue text-white py-10">
+      <div className="w-full max-w-5xl grid grid-cols-4 gap-8 mt-10">
         <div className="w-full">
           <img src={images.logo} alt="IAI logo" className="w-44" />
         </div>
@@ -104,6 +104,8 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+
+        <label className="block text-center w-full col-span-4 uppercase text-sm mt-10 font-medium">2022 Samaritan Angels Ltd. | ALL RIGHTS RESERVED  SiTE  credit</label>
       </div>
     </footer>
   );

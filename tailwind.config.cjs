@@ -12,6 +12,7 @@ module.exports = {
         heading: "#1A5AA7",
         input: "#FBFBFB",
         heading2: "#57CAF1",
+        "admin-text": "#838799",
       },
       backgroundImage: {
         mechanic: "url('/img/mechanic_bg.jpg')",

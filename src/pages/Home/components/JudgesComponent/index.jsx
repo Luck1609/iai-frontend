@@ -5,7 +5,7 @@ import JudgeCard from './JudgeCard'
 export default function JudgesComponent() {
   return (
     <div className="flex justify-center py-16">
-      <div className="max-w-6xl grid grid-cols-4 gap-8">
+      <div className="max-w-6xl grid grid-cols-4 gap-5">
         <h2 className="text-4xl font-semibold mb-8 text-default-red col-span-4 text-center">Meet Our Judges </h2>
         <JudgeCard 
           img={images.judge_1}

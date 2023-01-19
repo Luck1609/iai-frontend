@@ -9,7 +9,7 @@ export default function Services() {
       </h2>
 
       <div className="grid grid-cols-2 grid-rows-2 gap-5 gap-y-3">
-        <div className="w-full p-8 bg-white shadow-sm shadow-[#bf232733] flex gap-4">
+        <div className="w-full p-8 bg-white form-shadow flex gap-4">
           <div className="w-16 h-16">
             <MoneySend className="h-16 w-16" />
           </div>
@@ -23,7 +23,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="w-full p-8 bg-white shadow-sm shadow-[#bf232733] flex gap-4">
+        <div className="w-full p-8 bg-white form-shadow flex gap-4">
           <div className="w-16 h-16">
             <MoneySend className="h-16 w-16" />
           </div>
@@ -39,7 +39,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="w-full p-8 bg-white shadow-sm shadow-[#bf232733] flex gap-4 col-span-2">
+        <div className="w-full p-8 bg-white form-shadow flex gap-4 col-span-2">
           <div className="w-16 h-16">
             <MoneySend className="h-16 w-16" />
           </div>
