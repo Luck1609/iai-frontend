@@ -1,16 +1,13 @@
+import { lazy } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Layout from "@layouts/UserLayout";
-import Home from "@pages/Home";
-import About from "@pages/About";
-import Faq from "@pages/FAQ";
-import Blog from "@pages/Blog";
-import Contact from "@pages/Contact";
-import AdminGuestLayout from "@pages/auth";
-import Login from "@pages/auth/Login";
-import ForgotPassword from "@pages/auth/ForgotPassword";
-import ResetPassword from "@pages/auth/ResetPassword";
-import ApplicationForm from "@pages/Apply";
-import AdminLayout from "@layouts/AdminLayout";
+const Layout = lazy(() => import("@layouts/UserLayout"));
+const Home = lazy(() => import("@pages/Home"));
+const About = lazy(() => import("@pages/About"));
+const Faq = lazy(() => import("@pages/FAQ"));
+const Blog = lazy(() => import("@pages/Blog"));
+const Contact = lazy(() => import("@pages/Contact"));
+const ApplicationForm = lazy(() => import("@pages/Apply"));
+const AdminLayout = lazy(() => import("@layouts/AdminLayout"));
 
 function App() {
 
