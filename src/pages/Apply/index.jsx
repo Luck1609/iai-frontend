@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { East, West } from "@mui/icons-material";
-import { Btn, FormBtn } from "@components/btn";
-import LinkItem from "@components/link";
+import { Btn, FormBtn } from "@components/Btn";
+import LinkItem from "@components/Link";
 import ApplicationForm1 from "./ApplicationForm1";
 import ApplicationForm2 from "./ApplicationForm2";
 import ApplicationForm3 from "./ApplicationForm3";
@@ -16,10 +16,9 @@ export default function ApplicationForm() {
 
   const { handleSubmit } = methods;
 
+  const submit = (payload) => {};
 
-  const submit = (payload) => {}
-
-  const titles = ["Basic Data", "Business Data", "Investment Details"]
+  const titles = ["Basic Data", "Business Data", "Investment Details"];
 
   return (
     <div className="flex justify-center items-center py-36">
@@ -50,57 +49,64 @@ export default function ApplicationForm() {
             </p>
 
             <p className="">
-              <LinkItem url="/" className="text-red-text">
+              <a
+                href="https://drive.google.com/drive/u/1/folders/1oFLnPY7jRwTuEVIPm4Y3ZwIyv-fgdIxx"
+                target="_blank"
+                className="text-red-text"
+              >
                 Download this Guide
-              </LinkItem>{" "}
+              </a>{" "}
               to help prepare your video or presentation.
             </p>
           </div>
 
-          <h3 className="text-2xl font-bold mb-10">{ titles[step] }</h3>
+          <h3 className="text-2xl font-bold mb-10">{titles[step]}</h3>
         </div>
 
         <FormProvider {...methods}>
-          <form className="px-10 grid gap-12 pb-16" onSubmit={handleSubmit(submit)}>
+          <form
+            className="px-10 grid gap-12 pb-16"
+            onSubmit={handleSubmit(submit)}
+          >
             {showStep(step)}
-          
-            <div className={`flex items-center ${step > 0 ? "justify-between" : "justify-end"}`}>
-              {
-                step > 0 && (
-                  <Btn
-                    content={
-                      <span className="flex items-center">
-                        <West className="mr-3" /> Previous 
-                      </span>
-                    }
-                    className="h-12 bg-[#E0E0E0] hover:bg-[#E0E0E0] text-black w-44 place-self-start rounded-[5px]"
-                    click={handlePrevious}
-                  />
-                )
-              }
-          
-              {
-                step === 2 ? (
-                  <FormBtn 
-                    content={
-                      <span className="flex items-center">
-                        Pay to submit <East className="ml-3" />
-                      </span>
-                    }
-                    className="h-12 bg-default-red hover:bg-default-red w-44 justify-self-end rounded-[5px]"
-                  />
-                ) : (
-                  <Btn
-                    content={
-                      <span className="flex items-center">
-                        Next <East className="ml-3" />
-                      </span>
-                    }
-                    className="h-12 bg-default-red hover:bg-default-red w-44 place-self-end rounded-[5px]"
-                    click={handleNext}
-                  />
-                )
-              }
+
+            <div
+              className={`flex items-center ${
+                step > 0 ? "justify-between" : "justify-end"
+              }`}
+            >
+              {step > 0 && (
+                <Btn
+                  content={
+                    <span className="flex items-center">
+                      <West className="mr-3" /> Previous
+                    </span>
+                  }
+                  className="h-12 bg-[#E0E0E0] hover:bg-[#E0E0E0] text-black w-44 place-self-start rounded-[5px]"
+                  click={handlePrevious}
+                />
+              )}
+
+              {step === 2 ? (
+                <FormBtn
+                  content={
+                    <span className="flex items-center">
+                      Pay to submit <East className="ml-3" />
+                    </span>
+                  }
+                  className="h-12 bg-default-red hover:bg-default-red w-44 justify-self-end rounded-[5px]"
+                />
+              ) : (
+                <Btn
+                  content={
+                    <span className="flex items-center">
+                      Next <East className="ml-3" />
+                    </span>
+                  }
+                  className="h-12 bg-default-red hover:bg-default-red w-44 place-self-end rounded-[5px]"
+                  click={handleNext}
+                />
+              )}
             </div>
           </form>
         </FormProvider>

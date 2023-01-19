@@ -5,3 +5,7 @@
 .container {
   @apply w-full max-w-7xl;
 }
+
+nav {
+  transition: .3s;
+}

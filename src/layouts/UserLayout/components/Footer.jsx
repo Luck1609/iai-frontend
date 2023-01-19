@@ -1,7 +1,15 @@
 import React from 'react'
 import { images } from '@assets/img/images'
-import Link from '@components/link'
-import { Mail, People, Call } from '@assets/img/svg'
+import Link from "@components/Link";
+import {
+  Mail,
+  People,
+  Call,
+  Facebook,
+  Instagram,
+  Youtube,
+  Linkedin,
+} from "@assets/img/svg";
 
 export default function Footer() {
   return (
@@ -19,7 +27,7 @@ export default function Footer() {
                 <span className="font-semibold flex items-center w-44">
                   <Call className="mr-3.5" /> Phone:
                 </span>
-                
+
                 <label className="">02484567900</label>
               </Link>
             </li>
@@ -42,14 +50,45 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
+
+          <ul className="mt-10 flex items-center w-2/4 justify-between">
+            <li className="">
+              <a href="https://www.facebook.com/iaminvestible" target="_blank">
+                <Facebook className="h-9" />
+              </a>
+            </li>
+            <li className="">
+              <a
+                href="https://www.instagram.com/iaminvestible_official/"
+                target="_blank"
+              >
+                <Instagram className="h-9" />
+              </a>
+            </li>
+            <li className="">
+              <a
+                href="https://www.youtube.com/@iaminvestibleGH"
+                target="_blank"
+              >
+                <Youtube className="h-7" />
+              </a>
+            </li>
+            <li className="">
+              <a
+                href="https://www.linkedin.com/company/iaminvestible/"
+                target="_blank"
+              >
+                <Linkedin className="h-9" />
+              </a>
+            </li>
+          </ul>
         </div>
 
-        
         <div className="w-full ">
           <h4 className="text-3xl font-semibold mb-7">Quick Links</h4>
           <ul>
             <li className="">
-              <Link url="/" className="flex py-1.5">
+              <Link url="/apply" className="flex py-1.5">
                 <label className="">Submit An Application</label>
               </Link>
             </li>
@@ -59,13 +98,13 @@ export default function Footer() {
               </Link>
             </li>
             <li className="">
-              <Link url="/" className="flex py-1.5">
+              <a href="mailto:info@iaminvestible.com" className="flex py-1.5 cursor-pointer">
                 <label className="">Contact An Administrator</label>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
-  )
+  );
 }

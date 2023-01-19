@@ -3,9 +3,9 @@ import { FormProvider, useForm } from 'react-hook-form'
 import Input from '@components/Input'
 import Password from '@components/Password'
 import { images } from '@assets/img/images'
-import { FormBtn } from '@components/btn'
-import CheckboxComponent from '@components/Checkbox'
-import Link from '@components/link'
+import { FormBtn } from "@components/Btn";
+import CheckboxComponent from "@components/Checkbox";
+import Link from "@components/Link";
 
 export default function Login() {
   const methods = useForm({mode: "all"})

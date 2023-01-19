@@ -16,3 +16,18 @@ export default function LinkItem({ url, target = null, className, children, ...p
     </Link>
   )
 }
+
+// export function ExLink({ url, target = null, className, children, ...props }) {
+
+//   return (
+//     <Link
+//       to={{ pathname: url }}
+//       rel="noopener noreferrer"
+//       target="_blank"
+//       className={ className }
+//       {...props}
+//     >
+//       { children }
+//     </Link>
+//   )
+// }

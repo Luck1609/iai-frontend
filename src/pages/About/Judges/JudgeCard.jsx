@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight,  } from "@mui/icons-material";
-import Link from "@components/link";
+import Link from "@components/Link";
 
 export default function JudgeCard({ img, title, name, content }) {
   return (

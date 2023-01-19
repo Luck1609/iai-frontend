@@ -1,5 +1,5 @@
-import { Btn } from '@components/btn'
-import React from 'react'
+import { Btn } from "@components/Btn";
+import React from "react";
 
 export default function AboutInfo() {
   return (
@@ -44,11 +44,13 @@ export default function AboutInfo() {
             startups who wish to receive funding.
           </p>
 
-          <Btn
-            content="Visit Sal's Website"
-            variant="outlined"
-            className="text-heading2 border-heading2 mt-8 h-10"
-          />
+          <a href="https://samaritangroupgh.com/" className="" target="_blank">
+            <Btn
+              content="Visit Sal's Website"
+              variant="outlined"
+              className="text-heading2 border-heading2 mt-8 h-10"
+            />
+          </a>
         </div>
 
         <div className="bg-lady bg-cover w-10/12 h-[430px] self-center ml-[16%]"></div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Btn } from '@components/btn'
+import { Btn } from "@components/Btn";
 import { Cloud, PostIdea } from '@assets/img/svg'
 import VideoComponent from './AboutComponent/VideoComponent'
 

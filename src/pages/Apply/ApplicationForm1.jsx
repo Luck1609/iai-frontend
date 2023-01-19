@@ -1,6 +1,6 @@
 import React from "react";
 import Input from "@components/Input";
-import PhoneNumberInput from "@components/phone_number_input";
+import PhoneNumberInput from "@components/PhoneNumberInput";
 
 export default function () {
   return (

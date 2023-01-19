@@ -2,8 +2,8 @@ import React from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import Input from "@components/Input";
 import { images } from "@assets/img/images";
-import { FormBtn } from "@components/btn";
-import Link from "@components/link";
+import { FormBtn } from "@components/Btn";
+import Link from "@components/Link";
 
 export default function ForgotPassword() {
   const methods = useForm({ mode: "all" });

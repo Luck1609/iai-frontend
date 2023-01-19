@@ -1,6 +1,6 @@
 import React from 'react'
 import Input from '@components/Input'
-import Textarea from '@components/textarea'
+import Textarea from '@components/Textarea'
 
 export default function ApplicationForm2() {
   return (
