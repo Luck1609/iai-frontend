@@ -13,9 +13,6 @@ import baker from "./baker.jpg";
 import blog_2 from "./blog_2.jpg";
 import handshake from "./handshake.jpg";
 import video_bg from "./video_bg.jpg";
-import mechanic from "./mechanic.jpg";
-import sewing from "./sewing.jpg";
-import market from "./market.jpg";
 
 export const images = {
   logo, 
@@ -33,7 +30,4 @@ export const images = {
   blog_2,
   handshake,
   video_bg,
-  mechanic,
-  sewing,
-  market,
 };

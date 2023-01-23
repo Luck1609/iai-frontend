@@ -28,7 +28,7 @@ export default function JudgesComponent() {
           content={
             <div className="text-lg text-center w-full">
               <label className="font-bold uppercase text-heading block mb-1">
-                Tonyi <p>Senayah</p>
+                Tornyi <p>Senayah</p>
               </label>
               <span className="font-medium text-[#536673] text-[15px]">
                 CEO, Horseman

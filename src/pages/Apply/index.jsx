@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { East, West } from "@mui/icons-material";
 import { Btn, FormBtn } from "@components/Btn";
-import LinkItem from "@components/Link";
 import ApplicationForm1 from "./ApplicationForm1";
 import ApplicationForm2 from "./ApplicationForm2";
 import ApplicationForm3 from "./ApplicationForm3";
@@ -23,13 +22,13 @@ export default function ApplicationForm() {
   return (
     <div className="flex justify-center items-center py-36">
       <div className="rounded-xl w-full max-w-4xl bg-white shadow-form-shadow overflow-hidden">
-        <heading className="flex items-center justify-between bg-[#E9EEF2] p-3 px-10">
+        <div className="flex items-center justify-between bg-[#E9EEF2] p-3 px-10">
           <h2 className="text-2xl pb-2 font-bold text-default-red relative before:bg-line before:bg-cover before:absolute before:-bottom-1.5 before:w-full before:h-4">
             Apply form
           </h2>
 
           <div className="font-bold">{step + 1} / 3</div>
-        </heading>
+        </div>
 
         <div className="p-10">
           <h2 className="text-xl mb-8">Welcome to I AM INVESTIBLE</h2>

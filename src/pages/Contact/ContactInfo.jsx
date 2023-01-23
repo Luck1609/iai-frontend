@@ -33,7 +33,6 @@ export default function ContactInfo() {
                 href="mailto:Inquires@IamInvestible.com"
                 className="flex py-1.5 font-medium"
               >
-                i
                 <span className="font-semibold flex items-center w-24">
                   Email:
                 </span>

@@ -37,7 +37,7 @@ export default function Footer() {
                   <Mail className="mr-3.5" /> Email:
                 </span>
 
-                <label className="">Inquires@IamInvestible.com</label>
+                <label className="">inquires@IamInvestible.com</label>
               </Link>
             </li>
             <li className="">
@@ -46,7 +46,7 @@ export default function Footer() {
                   <People className="mr-3.5" /> Support:
                 </span>
 
-                <label className="">Info@IamInvestible.com</label>
+                <label className="">info@IamInvestible.com</label>
               </Link>
             </li>
           </ul>
@@ -89,7 +89,7 @@ export default function Footer() {
           <ul>
             <li className="">
               <Link url="/apply" className="flex py-1.5">
-                <label className="">Submit An Application</label>
+                <label className="">Submit an application</label>
               </Link>
             </li>
             <li className="">
@@ -99,7 +99,7 @@ export default function Footer() {
             </li>
             <li className="">
               <a href="mailto:info@iaminvestible.com" className="flex py-1.5 cursor-pointer">
-                <label className="">Contact An Administrator</label>
+                <label className="">Contact an administrator</label>
               </a>
             </li>
           </ul>

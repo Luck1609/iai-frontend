@@ -13,28 +13,28 @@ export default function Judges() {
         img={images.judge_1_short}
         title="CEO, Guba"
         name="Dentaa Amoateng MBE"
-        content="Eget porta enim consequat cubilia efficitur posuere proin consectetur at. Eget nulla fames dictum sagittis eleifend nibh. Adipiscing ligula volutpat vestibulum quisque vel..."
+        content="Lady Dentaa Amoateng MBE is a British Ghanaian entrepreneur, actress, TV presenter, singer, producer and manager."
       />
 
       <JudgeCard
         img={images.judge_2_short}
         title="CEO, Horseman"
-        name="Tonyi Senayah"
-        content="Eget porta enim consequat cubilia efficitur posuere proin consectetur at. Eget nulla fames dictum sagittis eleifend nibh. Adipiscing ligula volutpat vestibulum quisque vel..."
+        name="Tornyi Senayah"
+        content="Tornyi Senayah is a Ghanaian entrepreneur and the founder/CEO of Horseman Shoes, a footwear manufacturing company he established in 2010,"
       />
 
       <JudgeCard
         img={images.judge_3_short}
         title="Managing Consultant, IAI"
         name="Angelina Diyuoh Minski"
-        content="Eget porta enim consequat cubilia efficitur posuere proin consectetur at. Eget nulla fames dictum sagittis eleifend nibh. Adipiscing ligula volutpat vestibulum quisque vel..."
+        content="Angelina Diyuoh Minski is a Private Sector Development Expert with over 14 years experience in Project Management and SME Development leading initiatives"
       />
 
       <JudgeCard
         img={images.judge_4_short}
         title="CEO, EMI Group Africa"
         name="Ekow Mensah"
-        content="Eget porta enim consequat cubilia efficitur posuere proin consectetur at. Eget nulla fames dictum sagittis eleifend nibh. Adipiscing ligula volutpat vestibulum quisque vel..."
+        content="Ekow is named amongst the 100 Most Influential Young Africans, 50 Most Influential Young Ghanaians, 60 Young Leaders in Ghana by CocaCola, Top 100 Speakers in Ghana"
       />
     </div>
   );

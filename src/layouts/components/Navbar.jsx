@@ -21,7 +21,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className={`w-full flex justify-center fixed z-20 h-[90px] ${switcBackground ? "bg-slate-50" : ""}`}>
+    <nav className={`w-full flex justify-center fixed z-30 h-[90px] ${switcBackground ? "bg-slate-50" : ""}`}>
       <div className="container flex">
         <Link to="/" className="grow">
           <img src={images.logo_red} alt="IAI logo" className="h-20" />

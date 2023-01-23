@@ -20,10 +20,22 @@ module.exports = {
         contact: "url('/img/contact_bg.jpg')",
         market: "url('/img/market_short.jpg')",
         staff: "url('/img/staff.jpg')",
+        
+        
         lady: "url('/img/lady.png')",
+        tailor: "url('/img/tailor.png')",
+
+        "iai-red": "url('/img/iai_red.png')",
+        "samaritan-red": "url('/img/samaritan_red.png')",
+        "iai-white": "url('/img/logo_white_background.jpg')",
+
         line: "url('/img/line.png')",
         tailor: "url('/img/tailor.png')",
-        tailor: "url('/img/tailor.png')",
+
+        "market-lady": "url('/img/market.jpg')",
+        "maintenance": "url('/img/mechanic.jpg')",
+        "sewing": "url('/img/sewing.jpg')",
+
         "drawing-board": "url('/img/drawing_board.jpg')",
       },
       boxShadow: {

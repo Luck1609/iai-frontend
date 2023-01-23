@@ -7,8 +7,8 @@ export default function Stats() {
       <div className="w-full flex items-center justify-center text-white border-r border-white border-b">
         <div className="text-center">
           <UserOcta className="m-auto mb-4" />
-          <label className="font-medium">Entrepreneurs Funded</label>
-          <span className="text-3xl block mt-10">7</span>
+          <label className="font-medium">Yearly Investment</label>
+          <span className="text-3xl block mt-10">GH₵ 1.4m</span>
         </div>
       </div>
 
@@ -16,7 +16,7 @@ export default function Stats() {
         <div className="text-center">
           <Persons className="m-auto mb-4" />
           <label className="font-medium">Entrepreneurs Trained</label>
-          <span className="text-3xl block mt-10">27</span>
+          <span className="text-3xl block mt-10">2000</span>
         </div>
       </div>
 
@@ -24,7 +24,7 @@ export default function Stats() {
         <div className="text-center">
           <Building className="m-auto mb-4" />
           <label className="font-medium">Enterprises Supported</label>
-          <span className="text-3xl block mt-10">5</span>
+          <span className="text-3xl block mt-10">2000</span>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ export default function Stats() {
         <div className="text-center">
           <Buildings className="m-auto mb-4" />
           <label className="font-medium">Jobs Supported</label>
-          <span className="text-3xl block mt-10">150</span>
+          <span className="text-3xl block mt-10">7500</span>
         </div>
       </div>
     </div>

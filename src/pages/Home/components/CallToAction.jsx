@@ -24,7 +24,7 @@ export default function CallToAction() {
                 </span>
               }
               variant="outlined"
-              className="border-primary text-primary hover:text-white hover:bg-primary h-14 mr-8"
+              className="animate-pulse border-primary text-primary hover:text-white hover:bg-primary h-14 mr-8"
               ref={idea}
             />
 

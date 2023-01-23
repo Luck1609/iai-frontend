@@ -6,7 +6,7 @@ export default function ApplicationForm3() {
     <>
       <Input
         name="profit"
-        label="How much profit have you made so far "
+        label="how much sales have you made in the last year or two (2)?"
         placeholder="Provide this as a month on month average, Then a total per year."
         // constainerClass=""
         className="border-b border-input-border rounded-none"
@@ -29,9 +29,9 @@ export default function ApplicationForm3() {
       />
 
       <Input
-        name="valuation"
-        label="How much do you value your business ?"
-        placeholder="How much do you value your business? "
+        name="staff"
+        label="How many employees do you have included the owners?"
+        placeholder="Business employees (staff)"
         // constainerClass=""
         className="border-b border-input-border rounded-none"
       />

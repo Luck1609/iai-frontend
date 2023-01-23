@@ -16,9 +16,7 @@ export default function Services() {
           <div className="grow">
             <label className="font-semibold text-lg">Financial support</label>
             <p className="leading-8">
-              Make use of our working relationships with more than 1.600
-              organizations including incubators, accelerators, NGOs, VCs, angel
-              networks, and multinationals, built over the past decade.
+              Access to finance (small grants and finance facilitation) to enable SGB's become investor ready and support working capital needs
             </p>
           </div>
         </div>
@@ -32,9 +30,7 @@ export default function Services() {
               Mentorship & Coaching
             </label>
             <p className="leading-8">
-              Make use of our working relationships with more than 1.600
-              organizations including incubators, accelerators, NGOs, VCs, angel
-              networks, and multinationals, built over the past decade.
+              Offer training and mentorship support to accelerate growth of enterprises.
             </p>
           </div>
         </div>
@@ -44,12 +40,9 @@ export default function Services() {
             <MoneySend className="h-16 w-16" />
           </div>
           <div className="grow">
-            <label className="font-semibold text-lg">Consultancy</label>
+            <label className="font-semibold text-lg">Business Advisory Services</label>
             <p className="leading-8">
-              Choose from a la carte services what you need most, from designing
-              the program or contest to arranging mentorship and training for
-              entrepreneurs to organizing the final pitch event and anything in
-              between.
+              Business advisory services and coaching support to entrepreneurs to improve competitiveness
             </p>
           </div>
         </div>
