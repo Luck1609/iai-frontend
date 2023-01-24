@@ -1,10 +1,10 @@
 import React from "react";
 import { Edit, Post, User } from '@assets/img/svg'
-import Link from "@components/Link";
+import LinkItem from "@components/Link";
 
 export default function BlogCard({ img, title, name, content }) {
   return (
-    <Link url="/blogs" className="flex items-center text-heading2 font-semibold">
+    <LinkItem url="/blogs" className="flex items-center text-heading2 font-semibold">
       <div className="max-w-5xl w-full mx-auto rounded-xl overflow-hidden">
         <div className="w-full bg-white flex items-center">
           <img src={img} alt="Judge" className="w-[280px]" />
@@ -23,6 +23,6 @@ export default function BlogCard({ img, title, name, content }) {
           </div>
         </div>
       </div>
-    </Link>
+    </LinkItem>
   );
 }

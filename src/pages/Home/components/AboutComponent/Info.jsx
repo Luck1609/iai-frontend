@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "@components/Link";
+import LinkItem from "@components/Link";
 
 export default function Info() {
   return (
@@ -23,7 +23,7 @@ export default function Info() {
         I Am Investible provides funding and mentorship to its winners monthly.
       </p>
 
-      <Link to="/" className="font-medium block mt-5">Read More</Link>
+      <LinkItem to="/" className="font-medium block mt-5">Read More</LinkItem>
     </div>
   );
 }

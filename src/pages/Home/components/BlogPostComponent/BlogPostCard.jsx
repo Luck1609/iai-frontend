@@ -1,10 +1,10 @@
 import React from "react";
 import { Edit, Post, User } from "@assets/img/svg";
-import Link from "@components/Link";
+import LinkItem from "@components/Link";
 
 export default function BlogPostCard({ img, title }) {
   return (
-    <Link className="w-full">
+    <LinkItem className="w-full">
       <img src={img} alt="" className="w-full rounded-tl-[100px]" />
       <div className="flex text-slate-400 my-2">
         <span className="flex mr-5 text-[14px]">
@@ -20,6 +20,6 @@ export default function BlogPostCard({ img, title }) {
       <span className="flex text-[14px] text-primary items-center">
         <Post className="mr-2 h-5 w-5" /> Read Blog
       </span>
-    </Link>
+    </LinkItem>
   );
 }

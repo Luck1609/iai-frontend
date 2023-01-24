@@ -1,6 +1,6 @@
 import React from 'react'
 import { images } from '@assets/img/images'
-import Link from "@components/Link";
+import LinkItem from "@components/Link";
 import {
   Mail,
   People,
@@ -23,31 +23,31 @@ export default function Footer() {
           <h4 className="text-3xl font-semibold mb-7">Contact us</h4>
           <ul>
             <li className="">
-              <Link url="/" className="flex py-1.5">
+              <LinkItem url="/" className="flex py-1.5">
                 <span className="font-semibold flex items-center w-44">
                   <Call className="mr-3.5" /> Phone:
                 </span>
 
                 <label className="">02484567900</label>
-              </Link>
+              </LinkItem>
             </li>
             <li className="">
-              <Link url="/" className="flex py-1.5">
+              <LinkItem url="/" className="flex py-1.5">
                 <span className="font-semibold flex items-center w-44">
                   <Mail className="mr-3.5" /> Email:
                 </span>
 
                 <label className="">inquires@IamInvestible.com</label>
-              </Link>
+              </LinkItem>
             </li>
             <li className="">
-              <Link url="/" className="flex py-1.5">
+              <LinkItem url="/" className="flex py-1.5">
                 <span className="font-semibold flex items-center w-44">
                   <People className="mr-3.5" /> Support:
                 </span>
 
                 <label className="">info@IamInvestible.com</label>
-              </Link>
+              </LinkItem>
             </li>
           </ul>
 
@@ -78,24 +78,24 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/iaminvestible/"
                 target="_blank"
               >
-                <Linkedin className="h-9" />
+                <LinkItemedin className="h-9" />
               </a>
             </li>
           </ul>
         </div>
 
         <div className="w-full ">
-          <h4 className="text-3xl font-semibold mb-7">Quick Links</h4>
+          <h4 className="text-3xl font-semibold mb-7">Quick LinkItems</h4>
           <ul>
             <li className="">
-              <Link url="/apply" className="flex py-1.5">
+              <LinkItem url="/apply" className="flex py-1.5">
                 <label className="">Submit an application</label>
-              </Link>
+              </LinkItem>
             </li>
             <li className="">
-              <Link url="/" className="flex py-1.5">
+              <LinkItem url="/" className="flex py-1.5">
                 <label className="">Sign up for mentorship</label>
-              </Link>
+              </LinkItem>
             </li>
             <li className="">
               <a href="mailto:info@iaminvestible.com" className="flex py-1.5 cursor-pointer">

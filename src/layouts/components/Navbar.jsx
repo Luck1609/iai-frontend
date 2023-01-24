@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Btn } from "@components/Btn";
-import Link from "@components/Link";
+import LinkItem from "@components/Link";
 import { images } from "@assets/img/images";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [switcBackground, setSwitcBackground] = useState(false)
@@ -23,22 +23,22 @@ export default function Navbar() {
   return (
     <nav className={`w-full flex justify-center fixed z-30 h-[90px] ${switcBackground ? "bg-slate-50" : ""}`}>
       <div className="container flex">
-        <Link to="/" className="grow">
+        <LinkItem to="/" className="grow">
           <img src={images.logo_red} alt="IAI logo" className="h-20" />
-        </Link>
+        </LinkItem>
       
         <ul className="flex items-center">
           {
             links(pathname).map(({ label, active, link }, index) => (
               <li className="mx-5" key={index.toString()}>
-                <Link  url={link} className={`py-3 hover:text-red-500 
+                <LinkItem  url={link} className={`py-3 hover:text-red-500 
                   ${ active 
                     ? "text-red-500" 
                     : (switcBackground || pathname === "/apply") 
                       ? "text-black" 
                       : "text-white"
                   } block font-medium
-                `}>{label}</Link>
+                `}>{label}</LinkItem>
               </li>
             ))
           }

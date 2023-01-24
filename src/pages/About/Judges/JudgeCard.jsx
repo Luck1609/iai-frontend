@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight,  } from "@mui/icons-material";
-import Link from "@components/Link";
+import LinkItem from "@components/Link";
 
 export default function JudgeCard({ img, title, name, content }) {
   return (
@@ -15,9 +15,9 @@ export default function JudgeCard({ img, title, name, content }) {
           <h5 className="font-semibold text-3xl text-heading mb-5">{name}</h5>
           <p className="">{content}</p>
 
-          <Link url="/" className="flex items-center text-heading2 mt-3">
+          <LinkItem url="/" className="flex items-center text-heading2 mt-3">
             See full bio <ArrowRight />
-          </Link>
+          </LinkItem>
         </div>
       </div>
     </div>
