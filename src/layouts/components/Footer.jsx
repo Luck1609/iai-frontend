@@ -23,31 +23,31 @@ export default function Footer() {
           <h4 className="text-3xl font-semibold mb-7">Contact us</h4>
           <ul>
             <li className="">
-              <LinkItem url="/" className="flex py-1.5">
+              <a href="tel:02484567900" className="flex py-1.5">
                 <span className="font-semibold flex items-center w-44">
                   <Call className="mr-3.5" /> Phone:
                 </span>
 
                 <label className="">02484567900</label>
-              </LinkItem>
+              </a>
             </li>
             <li className="">
-              <LinkItem url="/" className="flex py-1.5">
+              <a href="mailto:inquires@IamInvestible.com" className="flex py-1.5">
                 <span className="font-semibold flex items-center w-44">
                   <Mail className="mr-3.5" /> Email:
                 </span>
 
                 <label className="">inquires@IamInvestible.com</label>
-              </LinkItem>
+              </a>
             </li>
             <li className="">
-              <LinkItem url="/" className="flex py-1.5">
+              <a href="mailto:info@IamInvestible.com" className="flex py-1.5">
                 <span className="font-semibold flex items-center w-44">
                   <People className="mr-3.5" /> Support:
                 </span>
 
                 <label className="">info@IamInvestible.com</label>
-              </LinkItem>
+              </a>
             </li>
           </ul>
 
@@ -78,7 +78,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/iaminvestible/"
                 target="_blank"
               >
-                <LinkItemedin className="h-9" />
+                <Linkedin className="h-9" />
               </a>
             </li>
           </ul>
