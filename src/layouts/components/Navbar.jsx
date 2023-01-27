@@ -28,7 +28,7 @@ export default function Navbar() {
       }`}
     >
       <div className="contained flex items-center">
-        <LinkItem to="/" className="grow">
+        <LinkItem to="/home" className="grow">
           <img src={images.logo_red} alt="IAI logo" className="h-16 lg:h-20" />
         </LinkItem>
 

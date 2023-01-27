@@ -67,7 +67,7 @@ export default function Footer() {
                 </LinkItem>
               </li>
               <li className="">
-                <LinkItem url="/" className="flex py-1.5">
+                <LinkItem url="/home" className="flex py-1.5">
                   <label className="">Sign up for mentorship</label>
                 </LinkItem>
               </li>

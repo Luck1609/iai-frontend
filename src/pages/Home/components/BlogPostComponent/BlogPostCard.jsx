@@ -4,7 +4,7 @@ import LinkItem from "@components/Link";
 
 export default function BlogPostCard({ img, title }) {
   return (
-    <LinkItem className="w-full">
+    <LinkItem url="/home" className="w-full">
       <img src={img} alt="" className="w-full rounded-tl-[100px]" />
       <div className="flex text-slate-400 my-2">
         <span className="flex mr-5 text-[14px]">

@@ -15,7 +15,7 @@ export default function JudgeCard({ img, title, name, content }) {
           <h5 className="font-semibold text-xl lg:text-3xl text-heading mb-5">{name}</h5>
           <p className="h-[75px] lg:h-auto overflow-y-hidden">{content}</p>
 
-          <LinkItem url="/" className="flex items-center text-heading2 mt-3">
+          <LinkItem url="/home" className="flex items-center text-heading2 mt-3">
             See full bio <ArrowRight />
           </LinkItem>
         </div>

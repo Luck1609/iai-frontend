@@ -23,7 +23,7 @@ export default function Info() {
         I Am Investible provides funding and mentorship to its winners monthly.
       </p>
 
-      <LinkItem to="/" className="font-medium block mt-5">Read More</LinkItem>
+      <LinkItem to="/home" className="font-medium block mt-5">Read More</LinkItem>
     </div>
   );
 }

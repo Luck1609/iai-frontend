@@ -1,6 +1,5 @@
-import LinkItem from "@components/Link";
-import Helper from "@helpers/index";
 import React from "react";
+import Helper from "@helpers/index";
 
 export default function FaqInfo() {
   return (
@@ -16,7 +15,7 @@ export default function FaqInfo() {
         <p className="p-4">
           <label className="font-semibold text-md">Step 1:</label>
 
-          <div className="">Visit <LinkItem url="https://www.iaminvestible.com" className="text-blue-500">www.iaminvestible.com </LinkItem>, click apply</div>
+          <div className="">Visit <a url="https://www.iaminvestible.com" className="text-blue-500">www.iaminvestible.com </a>, click apply</div>
         </p>
 
         <p className="p-4">
