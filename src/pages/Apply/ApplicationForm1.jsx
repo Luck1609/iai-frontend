@@ -1,24 +1,35 @@
 import React from "react";
 import Input from "@components/Input";
 import PhoneNumberInput from "@components/PhoneNumberInput";
+import SelectField from "@components/Select";
 
 export default function () {
   return (
     <>
       <Input
-        name="fullname"
+        name="name"
         label="Name"
         placeholder="Firstname & lastname"
         // constainerClass=""
         className="border-b border-input-border rounded-none"
       />
 
-      <Input
+      {/* <Input
         name="age"
         label="Age"
         placeholder="Select age"
-        // constainerClass=""
         className="border-b border-input-border rounded-none"
+      /> */}
+
+      <SelectField 
+        name="gender"
+        label="Select age"
+        options={[
+          {label: "Male", value: "Male"},
+          {label: "Female", value: "Female"},
+          {label: "Both", value: "Both"},
+        ]}
+        className="pl-5"
       />
 
       <Input
@@ -30,12 +41,12 @@ export default function () {
       />
 
       <Input
-        name="nationalId"
-        labelClassName="flex justify-between block w-full"
+        name="nationalIdCard"
+        labelClassName="flex items-center justify-between block w-full"
         label={
           <>
-            <span>National ID Card</span>
-            <span className="text-[#0000007f]">*Ghana card preferred*</span>
+            <span className="text-sm lg:text-normal">National ID Card</span>
+            <span className="text-[#0000007f] text-xs lg:text-normal">*Ghana card preferred*</span>
           </>
         }
         placeholder="GHA-000000000-0"

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="w-full overflow-hidden">
       <SliderComponent />
-      <div className="-mt-56 relative z-20">
+      <div className="-mt-24 lg:-mt-56 relative z-20 mx-2">
         <CallToAction />
       </div>
       <AboutComponent />

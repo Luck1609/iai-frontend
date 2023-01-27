@@ -5,8 +5,8 @@ import BlogPostCard from "./BlogPostCard";
 export default function BlogPostComponent() {
   return (
     <div className="flex justify-center py-16">
-      <div className="max-w-6xl grid grid-cols-3 gap-8">
-        <div className="col-span-3 text-center">
+      <div className="max-w-6xl grid nd:grid-cols-2 lg:grid-cols-3 gap-8 px-5 lg:px-0">
+        <div className="lg:col-span-3 text-center">
           <h2 className="text-4xl font-semibold mb-8 text-default-red">
             Our News & Updates
           </h2>

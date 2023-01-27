@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Btn } from "@components/Btn";
+import { useLocation, useNavigate } from "react-router-dom";
 import LinkItem from "@components/Link";
 import { images } from "@assets/img/images";
-import { useLocation, useNavigate } from "react-router-dom";
+import Sidebar from "./Sidebar";
+import { Btn } from "@components/Btn";
 
 export default function Navbar() {
   const [switcBackground, setSwitcBackground] = useState(false)
@@ -21,36 +22,43 @@ export default function Navbar() {
 
 
   return (
-    <nav className={`w-full flex justify-center fixed z-30 h-[90px] ${switcBackground ? "bg-slate-50" : ""}`}>
-      <div className="container flex">
+    <nav
+      className={`w-full flex justify-center fixed z-30 pb-1  ${
+        switcBackground ? "bg-slate-50" : ""
+      }`}
+    >
+      <div className="contained flex items-center">
         <LinkItem to="/" className="grow">
-          <img src={images.logo_red} alt="IAI logo" className="h-20" />
+          <img src={images.logo_red} alt="IAI logo" className="h-16 lg:h-20" />
         </LinkItem>
-      
-        <ul className="flex items-center">
-          {
-            links(pathname).map(({ label, active, link }, index) => (
-              <li className="mx-5" key={index.toString()}>
-                <LinkItem  url={link} className={`py-3 hover:text-red-500 
-                  ${ active 
-                    ? "text-red-500" 
-                    : (switcBackground || pathname === "/apply") 
-                      ? "text-black" 
+
+        <ul className="items-center hidden md:flex">
+          {links(pathname).map(({ label, active, link }, index) => (
+            <li className="mx-5" key={index.toString()}>
+              <LinkItem
+                url={link}
+                className={`py-3 hover:text-red-500 
+                  ${
+                    active
+                      ? "text-red-500"
+                      : switcBackground || pathname === "/apply"
+                      ? "text-black"
                       : "text-white"
                   } block font-medium
-                `}>{label}</LinkItem>
-              </li>
-            ))
-          }
+                `}
+              >
+                {label}
+              </LinkItem>
+            </li>
+          ))}
           <li className="mx-5">
             <Btn content="Apply Now" className="bg-[#1C2BE5]" click={apply} />
           </li>
-          {/* <li className="mx-5 py-3">
-            <Btn content="Apply Now" />
-          </li> */}
         </ul>
+        
+        
+        <Sidebar />
       </div>
-
     </nav>
   );
 }

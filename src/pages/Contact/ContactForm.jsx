@@ -23,12 +23,12 @@ export default function ContactForm() {
   return (
     <div className="w-full mt-20">
       <div className="max-w-5xl relative m-auto">
-        <h2 className="col-span-2 text-3xl font-semibold text-heading2">
+        <h2 className="text-3xl font-semibold text-heading2">
           Send Us A Message
         </h2>
         <FormProvider {...methods}>
           <form
-            className="py-5 grid grid-cols-2 gap-5 w-3/5"
+            className="p-5 lg:px-0 grid lg:grid-cols-2 gap-5 lg:w-3/5"
             onSubmit={handleSubmit(submit)}
           >
             <Input name="firstname" placeholder="Firstname" />
@@ -38,30 +38,30 @@ export default function ContactForm() {
             <Input
               name="email"
               placeholder="Email"
-              constainerClass="col-span-2"
+              constainerClass="lg:col-span-2"
             />
 
             <PhoneNumberInput
               name="phone"
-              className="w-full col-span-2"
+              className="w-full lg:col-span-2"
               subClassName="w-full p-3.5 rounded"
             />
 
             <Textarea
               name="message"
-              className="col-span-2"
+              className="lg:col-span-2"
               placeholder="Message"
             />
 
             <FormBtn
               content="Send Message"
-              className="bg-heading w-44 h-12"
+              className="bg-heading w-44 h-12 m-auto lg:m-0"
               disabled={!isDirty || !isValid}
             />
           </form>
         </FormProvider>
 
-        <div className="absolute h-[500px] w-[410px] -right-[10.15rem] 2xl:right-0 -bottom-16 bg-contact bg-cover"></div>
+        <div className="absolute h-[500px] w-[520px] -right-36 -bottom-16 bg-contact bg-cover hidden lg:block"></div>
       </div>
     </div>
   );

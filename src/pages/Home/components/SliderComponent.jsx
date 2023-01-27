@@ -14,9 +14,9 @@ export default class SimpleSlider extends Component {
     };
     return (
       <Slider {...settings} className="w-full">
-        <div className="w-full h-[750px] bg-market-lady bg-cover"></div>
-        <div className="w-full h-[750px] bg-maintenance bg-cover"></div>
-        <div className="w-full h-[750px] bg-sewing bg-cover"></div>
+        <div className="w-full h-[400px] lg:h-[750px] bg-market-lady bg-cover"></div>
+        <div className="w-full h-[400px] lg:h-[750px] bg-maintenance bg-cover"></div>
+        <div className="w-full h-[400px] lg:h-[750px] bg-sewing bg-cover"></div>
       </Slider>
     );
   }

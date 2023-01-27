@@ -15,7 +15,7 @@ export default function BlogPostCard({ img, title }) {
         </span>
       </div>
 
-      <h3 className="text-3xl font-semibold text-heading mb-5">{title}</h3>
+      <h3 className="text-xl lg:text-3xl font-semibold text-heading mb-5">{title}</h3>
 
       <span className="flex text-[14px] text-primary items-center">
         <Post className="mr-2 h-5 w-5" /> Read Blog

@@ -4,18 +4,18 @@ import React from "react";
 export default function ContactInfo() {
   return (
     <div className="bg-[#FCF0F0] -mt-10 max-w-6xl m-auto rounded-xl">
-      <h2 className="text-3xl font-semibold text-heading2 mb-8 p-7">
+      <h2 className="text-3xl font-semibold text-heading2 mb-8 p-7 text-center lg:text-left">
         Please feel free to contact us if you have a question or just want to
         say hello!
       </h2>
 
-      <div className="bg-white p-5 px-20 flex items-center w-full rounded-3xl">
+      <div className="bg-white p-5 lg:px-20 flex items-center flex-col lg:flex-row w-full rounded-3xl">
         <div className="basis-2/5">
           <div className="h-[264px] w-[295px] bg-lady bg-cover" />
         </div>
 
-        <div className="w-full basis-4/5 pl-16">
-          <h2 className="text-3xl text-heading font-bold mb-7">
+        <div className="w-full lg:basis-4/5 lg:pl-16 pt-10 lg:pt-0">
+          <h2 className="text-3xl text-heading font-bold mb-7 text-center lg:text-left">
             Support Center
           </h2>
           <ul>

@@ -4,7 +4,7 @@ import { Play } from "@assets/img/svg";
 
 export default function VideoComponent({ position }) {
   return (
-    <div className="relative">
+    <div className="relative w-11/12 mx-auto lg:w-full">
       <video poster={images.video_bg} className="relative rounded">
         <source src="" type="video/mp4" />
       </video>

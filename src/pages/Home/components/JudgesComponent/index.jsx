@@ -5,8 +5,8 @@ import JudgeCard from "./JudgeCard";
 export default function JudgesComponent() {
   return (
     <div className="flex justify-center py-16">
-      <div className="max-w-6xl grid grid-cols-4 gap-5">
-        <h2 className="text-4xl font-semibold mb-8 text-default-red col-span-4 text-center">
+      <div className="max-w-6xl grid md:grid-cols-2 lg:grid-cols-4 gap-5 px-5 lg:px-0">
+        <h2 className="text-4xl font-semibold mb-8 text-default-red lg:col-span-4 text-center">
           Meet Our Judges{" "}
         </h2>
         <JudgeCard
@@ -45,7 +45,7 @@ export default function JudgesComponent() {
                 Angelina <p>diyuoh minski</p>
               </label>
               <span className="font-medium text-[#536673] text-[15px]">
-                Managing Consultant , IAI
+                Man. Consultant , IAI
               </span>
             </div>
           }

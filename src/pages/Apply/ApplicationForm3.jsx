@@ -13,7 +13,7 @@ export default function ApplicationForm3() {
       />
 
       <Input
-        name="amount"
+        name="investment"
         label="How much investment are you looking for ?"
         placeholder="How much investment are you looking for ?"
         // constainerClass=""
@@ -21,7 +21,7 @@ export default function ApplicationForm3() {
       />
 
       <Input
-        name="use"
+        name="investmentUsageIdea"
         label="What will you use the investment for ?"
         placeholder="What will you spend the money on? Kindly discuss that which applies, Raw Materials ,"
         // constainerClass=""
@@ -29,7 +29,7 @@ export default function ApplicationForm3() {
       />
 
       <Input
-        name="staff"
+        name="employees"
         label="How many employees do you have included the owners?"
         placeholder="Business employees (staff)"
         // constainerClass=""
@@ -37,7 +37,7 @@ export default function ApplicationForm3() {
       />
 
       <Input
-        name="platform"
+        name="hearAboutUS"
         label="How did you hear about us?"
         placeholder="Facebook, Instagram, Twitter, LinkedIn, Referral (enter name), Search engines."
         // constainerClass=""

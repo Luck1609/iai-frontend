@@ -3,17 +3,17 @@ import LinkItem from "@components/Link";
 
 export default function Info() {
   return (
-    <div className="text-white">
-      <h3 className="text-3xl font-semibold mb-5 text-left uppercase">
+    <div className="text-white text-center lg:text-left px-5 lg:px-0">
+      <h3 className="text-xl lg:text-3xl font-semibold mb-5 uppercase">
         What is I Am Investible
       </h3>
 
-      <p className="leading-9">
+      <p className="leading-9 mb-4">
         I Am Investible is an initiative from Samaritan Angels Limited focused
         on accelerating the growth of entrepreneurs and creating jobs in Ghana.
       </p>
 
-      <p className="leading-9">
+      <p className="leading-9 mb-4">
         The aim is to provide Ghanaian entrepreneurs and start-ups with
         Financial Assistance, Mentorship and Technical Support to accelerate the
         growth of the beneficiary businesses.

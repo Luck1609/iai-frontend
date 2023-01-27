@@ -10,7 +10,7 @@ export default function ContactComponent() {
   return (
     <div className="w-full bg-mechanic bg-cover h-96 flex justify-center items-center mt-16">
       <FormProvider {...methods}>
-        <form className="bg-transparent text-white text-center w-[400px]">
+        <form className="bg-transparent text-white text-center lg:w-[400px]">
           <h4 className="font-semibold text-3xl">Stay Updated</h4>
           <label className="block my-5">
             Subscribe to receive news and updates
