@@ -25,7 +25,7 @@ export default function Footer() {
             <ul>
               <li className="">
                 <a href="tel:02484567900" className="flex py-1.5">
-                  <span className="font-semibold flex items-center w-24 lg:w-44">
+                  <span className="font-semibold flex items-center w-28 lg:w-36">
                     <Call className="mr-[5px] lg:mr-[16px]" /> Phone:
                   </span>
 
@@ -37,7 +37,7 @@ export default function Footer() {
                   href="mailto:inquires@IamInvestible.com"
                   className="flex py-1.5"
                 >
-                  <span className="font-semibold flex items-center w-24 lg:w-44">
+                  <span className="font-semibold flex items-center w-28 lg:w-36">
                     <Mail className="mr-[8px] lg:mr-[20px]" /> Email:
                   </span>
 
@@ -46,8 +46,8 @@ export default function Footer() {
               </li>
               <li className="">
                 <a href="mailto:info@IamInvestible.com" className="flex py-1.5">
-                  <span className="font-semibold flex items-center mr-4 lg:mr-0 w-24 lg:w-44">
-                    <People className="mr-[5px] lg:mr-[17px]" /> Support:
+                  <span className="font-semibold flex items-center lg:mr-0 w-28 lg:w-36">
+                    <People className="h-7 -ml-0.5 mr-[5px] lg:mr-[14px]" /> Support:
                   </span>
 
                   <label className="">info@iaminvestible.com</label>
