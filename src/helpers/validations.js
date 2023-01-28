@@ -40,24 +40,11 @@ const application_form_2_validation = yup.object().shape({
   businessIdea: yup.string().required(),
   businessDescription: yup.string().required(),
   sector: yup.string().required(),
-
-
   location: yup.string().required(),
-
-
   coFounder: yup.string().required(),
   aboutBusiness: yup.string().required(),
   businessStage: yup.string().required(),
   pitchVideo: yup.string().required()
-  // pitchVideo: yup.mixed().required()
-  //   .test("file-type", "File type must be (PDF, MP4, PPTx or Docx)", (file) => {
-  //     // console.log("file")
-  //     return true
-  //     // return !/jpg|jpeg|png/.test(file[0].type);
-  //   })
-  //   .test("file-size", "file must not be larger than 50Mb", (file) => {
-  //     return file && file[0]?.size <= 52428800;
-  //   }),
 })
 
 const application_form_3_validation = yup.object().shape({

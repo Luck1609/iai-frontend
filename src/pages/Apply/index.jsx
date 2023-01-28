@@ -10,6 +10,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import HttpReq from "@helpers/axios";
 import { usePaystackPayment } from "react-paystack";
 import Helper from "@helpers/index";
+import useAPI from "@hooks/useAPI";
 
 const validations = [
   application_form_1_validation,
@@ -20,6 +21,7 @@ const validations = [
 const http = new HttpReq();
 
 export default function ApplicationForm() {
+  const { makeRequest } = useAPI();
   const [step, setStep] = useState(0);
   const [submitting, setSubmitting] = useState(false)
 
@@ -33,7 +35,7 @@ export default function ApplicationForm() {
   const handleNext = () => setStep(step + 1);
   const handlePrevious = () => setStep(step - 1);
 
-  const { handleSubmit, watch, formState: {isValid, isDirty} } = methods;
+  const { handleSubmit, watch, reset, formState: {isValid, isDirty} } = methods;
 
     
 
@@ -49,28 +51,26 @@ export default function ApplicationForm() {
     publicKey: 'pk_test_990efee3f71a1bbe44dced41031d573c8be68217'
   })
 
-  const onSuccess = ({ reference, transaction }) => {
+  const onSuccess = ({ reference }) => {
+    const { file, ...payload } = watch();
     setSubmitting(true)
 
-    const { file, ...payload } = watch();
-
-    http
-      .post(`${Helper.api}/application`,
-        {
-          reference,
-          ...payload,
-          amount: 150
+    makeRequest({
+      url: "/application",
+      method: "post",
+      payload: {
+        reference,
+        ...payload,
+        amount: 150, 
+        action: () => {
+          reset()
+          setStep(0)
+          setSubmitting(true)
         }
-      )
-      .then(({ data, message }) => {
-        toast.success(message);
-        console.log('Succes response data', data)
-      })
-      .catch((err) => {
-        console.log("Ticket booking failed error", err);
-      });
-      
-    setSubmitting(false)
+      }
+    })
+
+    // reset()
   }
 
   const onClose = (ref) => {
@@ -166,7 +166,7 @@ export default function ApplicationForm() {
                     </span>
                   }
                   className="h-12 bg-default-red hover:bg-default-red w-32 lg:w-44 justify-self-end rounded-[5px]"
-                  disabled={!isValid || !isDirty}
+                  disabled={!isValid || !isDirty || submitting}
                 />
               ) : (
                 <Btn

@@ -133,7 +133,6 @@ export default function ApplicationForm2() {
         name="coFounder"
         label="Indicate co-owners and their ownership percentage and gender if any"
         placeholder="Indicate any other co-owner or partner if any? "
-        // constainerClass=""
         className="border-b border-input-border rounded-none"
       />
 

@@ -25,6 +25,7 @@ export default class HttpReq {
     // attached required parameters to the request
     this.http.interceptors.response.use(
       function (response) {
+        console.log("Respose data", response)
         return response.data;
       },
       function (error) {

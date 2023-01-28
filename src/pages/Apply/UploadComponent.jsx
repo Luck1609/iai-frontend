@@ -45,10 +45,10 @@ console.log("file type", img)
       const options = {
         onUploadProgress: (progress) => {
           let percentage = Math.floor((progress.loaded * 100) / progress.total);
+console.log("upload file", percentage)
           setProgress(percentage);
         },
       };
-// console.log("upload file", img)
       try {
         const result = await http.post(
           `${Helper.api}/upload-file`,
