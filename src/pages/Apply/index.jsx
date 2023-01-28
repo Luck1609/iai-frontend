@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { East, West } from "@mui/icons-material";
-import { Btn, FormBtn } from "@components/Btn";
+import { Btn, FormBtn, Loading } from "@components/Btn";
 import ApplicationForm1 from "./ApplicationForm1";
 import ApplicationForm2 from "./ApplicationForm2";
 import ApplicationForm3 from "./ApplicationForm3";
@@ -21,6 +21,7 @@ const http = new HttpReq();
 
 export default function ApplicationForm() {
   const [step, setStep] = useState(0);
+  const [submitting, setSubmitting] = useState(false)
 
   const resolver = yupResolver(validations[step])
 
@@ -32,41 +33,33 @@ export default function ApplicationForm() {
   const handleNext = () => setStep(step + 1);
   const handlePrevious = () => setStep(step - 1);
 
-  const { handleSubmit, watch, formState: {isValid, isDirty, isSubmitting, errors} } = methods;
+  const { handleSubmit, watch, formState: {isValid, isDirty} } = methods;
 
-  const submit = (payload) => {
-    console.log('Data to be submitted', payload)
-  };
+    
 
   const titles = ["Basic Data", "Business Data", "Investment Details"];
 
-
-
-
   
   const initializePayment = usePaystackPayment({
-    reference : Math.random().toString(36).slice(-5),
+    reference : Math.random().toString(36).slice(-8),
     currency: 'GHS',
     email: watch('email'),
-    amount: 200 * 100,
+    amount: 150 * 100,
     // publicKey: 'pk_live_7a865b13cdd74cb21d63f508c64711d73d9175df'
     publicKey: 'pk_test_990efee3f71a1bbe44dced41031d573c8be68217'
   })
 
   const onSuccess = ({ reference, transaction }) => {
-    console.log("payload to upload", watch(), reference, transaction);
+    setSubmitting(true)
+
     const { file, ...payload } = watch();
 
     http
-      .post(
-        `${
-          Helper.AppUrl
-        }/application`,
+      .post(`${Helper.api}/application`,
         {
           reference,
-          transaction,
           ...payload,
-          amount: 200
+          amount: 150
         }
       )
       .then(({ data, message }) => {
@@ -76,11 +69,12 @@ export default function ApplicationForm() {
       .catch((err) => {
         console.log("Ticket booking failed error", err);
       });
-    // await http.post(`${Helper.AppUrl}/application`, )
+      
+    setSubmitting(false)
   }
 
   const onClose = (ref) => {
-    console.log('Closed transaction reference', ref)
+    // console.log('Closed transaction reference', ref)
   }
 
   const processPayment = () => initializePayment(onSuccess, onClose)
@@ -160,7 +154,15 @@ export default function ApplicationForm() {
                 <FormBtn
                   content={
                     <span className="flex items-center">
-                      Pay to submit <East className="ml-3" />
+                      {
+                        submitting ? (
+                          <span className="flex items-center"><Loading /> <span className="ml-2">please wait...</span></span>
+                        ) : (
+                          <>
+                            Pay to submit <East className="ml-3" />
+                          </>
+                        )
+                      }
                     </span>
                   }
                   className="h-12 bg-default-red hover:bg-default-red w-32 lg:w-44 justify-self-end rounded-[5px]"

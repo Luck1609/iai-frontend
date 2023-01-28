@@ -1,9 +1,8 @@
+const dev = import.meta.env.MODE === "development";
+const env = import.meta.env;
 const Helper = {
-  dev: import.meta.env.MODE === "development",
-  env: import.meta.env,
-  AppUrl: import.meta.env.MODE === "development" 
-    ?  import.meta.env.VITE_DEV_API
-    : import.meta.env.VITE_API
+  api: dev ? env.VITE_DEV_API : env.VITE_API,
+  env, dev
 }
 
 export default Helper

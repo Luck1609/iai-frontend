@@ -7,7 +7,7 @@ import LinkItem from "@components/Link";
 import { images } from "@assets/img/images";
 import { useLocation } from "react-router-dom";
 
-export default function Sidebar() {
+export default function Sidebar({ switch: changeColor }) {
   const [state, setState] = React.useState(false);
   const { pathname } = useLocation();
 
@@ -50,7 +50,7 @@ export default function Sidebar() {
     <div>
       <>
         <Btn 
-          content={<Menu />}
+          content={<Menu className={`${ changeColor ? "text-slate-500" : "text-white"}`} />}
           className="bg-transparent text-white btn p-2 hover:bg-slate-100 hover:bg-opacity-20 lg:hidden"
           click={toggleDrawer}
         />

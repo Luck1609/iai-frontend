@@ -14,10 +14,15 @@ export default function () {
         className="border-b border-input-border rounded-none"
       />
 
-      {/* <Input
+      {/* <SelectField
         name="age"
-        label="Age"
-        placeholder="Select age"
+        label="Select Age"
+        options={[
+          { label: "15 - 25yrs", value: "15-25yrs" },
+          { label: "26 - 35yrs", value: "26-35yrs" },
+          { label: "35 - 50yrs", value: "35-50yrs" },
+          { label: "50+ yrs", value: "50+yrs" },
+        ]}
         className="border-b border-input-border rounded-none"
       /> */}
 
@@ -46,11 +51,12 @@ export default function () {
         label={
           <>
             <span className="text-sm lg:text-normal">National ID Card</span>
-            <span className="text-[#0000007f] text-xs lg:text-normal">*Ghana card preferred*</span>
+            <span className="text-[#0000007f] text-xs lg:text-normal">
+              *Ghana card preferred*
+            </span>
           </>
         }
         placeholder="GHA-000000000-0"
-        // constainerClass=""
         className="border-b border-input-border rounded-none"
       />
 

@@ -57,7 +57,7 @@ export default function Navbar() {
         </ul>
         
         
-        <Sidebar />
+        <Sidebar switch={switcBackground} />
       </div>
     </nav>
   );

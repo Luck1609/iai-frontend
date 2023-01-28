@@ -24,7 +24,7 @@ function App() {
           <Route path="/judges" element={<SuspenseComponent Component={Judges} />} />
           <Route path="/apply" element={<SuspenseComponent Component={ApplicationForm} />} />
 
-          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Route>
       </Routes>
     </BrowserRouter>

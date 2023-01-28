@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { Btn } from "@components/Btn";
 import { Cloud, PostIdea } from "@assets/img/svg";
-import VideoComponent from "./AboutComponent/VideoComponent";
 import Helper from "@helpers/index";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 
@@ -15,7 +14,7 @@ export default function CallToAction() {
             Empowering innovative businesses for growth.
           </h1>
 
-          <div className="mt-5 mx-auto lg:w-[400px] mb-10 flex flex-col lg:flex-row justify-center items-center gap-5">
+          <div className="mt-5 mx-auto lg:w-[500px] mb-10 flex flex-col lg:flex-row justify-center items-center gap-5">
             <Btn
               content={
                 <span className="flex items-center">
@@ -34,15 +33,14 @@ export default function CallToAction() {
                     <Cloud className="h-5 w-5 mr-1.5 -mt-1" /> Download Guide
                   </span>
                 }
-                className="bg-transparent hover:bg-white text-primary h-14 w-44"
-                // ref={download}
+                variant="outlined"
+                className="bg-transparent border-primary text-primary hover:bg-white h-14 w-44"
               />
             </a>
           </div>
 
           <LiteYouTubeEmbed
             id="aqVzCDbLwb0"
-            // className="h-80 w-full"
           />
         </div>
       </div>

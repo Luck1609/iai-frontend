@@ -28,11 +28,19 @@ export default function ApplicationForm3() {
         className="border-b border-input-border rounded-none"
       />
 
+      {/* <Input
+        name="bussinessValue"
+        label="How much do you value your business ?"
+        placeholder="What will you spend the money on? Kindly discuss that which applies, Raw Materials ,"
+        className="border-b border-input-border rounded-none"
+      /> */}
+
       <Input
         name="employees"
         label="How many employees do you have included the owners?"
         placeholder="Business employees (staff)"
         // constainerClass=""
+        type="number"
         className="border-b border-input-border rounded-none"
       />
 
