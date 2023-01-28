@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function index() {
+export default function JudgesComponent() {
   return (
-    <div>index</div>
+    <div className="contained">
+      
+    </div>
   )
 }

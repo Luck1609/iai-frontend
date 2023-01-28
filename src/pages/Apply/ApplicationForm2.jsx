@@ -80,9 +80,9 @@ export default function ApplicationForm2() {
 
   }
 
-  useEffect(() => {
-    setValue("pitchVideo", "vid.mp4")
-  }, [])
+  // useEffect(() => {
+  //   setValue("pitchVideo", "vid.mp4")
+  // }, [])
   
 
   const resetFileUpload = () => setFileError(null)

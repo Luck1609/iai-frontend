@@ -9,7 +9,7 @@ export default function () {
       <Input
         name="name"
         label="Name"
-        placeholder="Firstname & lastname"
+        placeholder="Full name"
         // constainerClass=""
         className="border-b border-input-border rounded-none"
       />
@@ -23,7 +23,7 @@ export default function () {
 
       <SelectField 
         name="gender"
-        label="Select age"
+        label="Select Gender"
         options={[
           {label: "Male", value: "Male"},
           {label: "Female", value: "Female"},

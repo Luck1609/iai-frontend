@@ -19,6 +19,7 @@ export default function Sidebar() {
     {label: "FAQ", url: "/faq"},
     {label: "Blogs", url: "/blogs"},
     {label: "Contact us", url: "/contact-us"},
+    {label: "Apply Now", url: "/apply"},
   ]
 
   const list = () => (

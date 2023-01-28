@@ -17,8 +17,11 @@ const Input = ({ label, name, constainerClass, className, labelClassName, placeh
       name={name}
       render={({ field: { onChange, onBlur, value = '' }, fieldState: { error } }) => (
         <div className={constainerClass}>
-          <label className={`font-semibold block mb-3 ${labelClassName}`}>{ label }</label>
-          <input type={ type } placeholder={placeholder ?? ""} className={`p-4 w-full rounded focus:outline-none ${className}`} value={value} onChange={onChange}  />
+          <label className={`font-semibold block mb-3 ${error ? "error" : ""} ${labelClassName}`}>{ label }</label>
+          <input type={ type } placeholder={placeholder ?? ""} onBlur={onBlur} className={`p-4 w-full rounded focus:outline-none ${error ? "error" : ""} ${className}`} value={value} onChange={onChange}  />
+          {
+            error && <span className="text-red-500 text-sm">{error.message}</span>
+          }
         </div>
       )}
     />

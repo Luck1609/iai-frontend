@@ -20,12 +20,12 @@ export default function ContactInfo() {
           </h2>
           <ul>
             <li className="">
-              <a href="tel:+233222424242" className="flex py-1.5 font-medium">
+              <a href="tel:+233257958570" className="flex py-1.5 font-medium">
                 <span className="font-semibold flex items-center w-24">
                   Phone:
                 </span>
 
-                <label className="">+233 (0) 222 42 42 42</label>
+                <label className="">+233 (025) 795-8570</label>
               </a>
             </li>
             <li className="">

@@ -24,12 +24,12 @@ export default function Footer() {
             <h4 className="text-3xl font-semibold mb-7">Contact us</h4>
             <ul>
               <li className="">
-                <a href="tel:02484567900" className="flex py-1.5">
+                <a href="tel:0257958570" className="flex py-1.5">
                   <span className="font-semibold flex items-center w-28 lg:w-36">
                     <Call className="mr-[5px] lg:mr-[16px]" /> Phone:
                   </span>
 
-                  <label className="">02484567900</label>
+                  <label className="">0257958570</label>
                 </a>
               </li>
               <li className="">

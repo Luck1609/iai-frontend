@@ -10,6 +10,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import HttpReq from "@helpers/axios";
 import { usePaystackPayment } from "react-paystack";
 import Helper from "@helpers/index";
+import guide from "@assets/iaminvestible-guide.pdf"
 
 const validations = [
   application_form_1_validation,
@@ -119,8 +120,9 @@ export default function ApplicationForm() {
             <p className="">
               <a
                 href={Helper.env.VITE_DOWNLOAD_GUIDE}
-                target="_blank"
+                // target="_blank"
                 className="text-red-text"
+                download
               >
                 Download this Guide
               </a>{" "}

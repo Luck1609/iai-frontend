@@ -30,3 +30,15 @@ nav, button {
 	color: #eee;
 	text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
 }
+
+/* .error {
+	@apply border-b border-red-500
+} */
+
+.yt-lite {
+	@apply w-[480px] h-[360px] m-auto
+}
+
+.yt-lite .lyt-activated {
+	@apply w-[560px] h-[315px] m-auto
+}

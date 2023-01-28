@@ -45,7 +45,7 @@ export default function JudgesComponent() {
                 Angelina <p>diyuoh minski</p>
               </label>
               <span className="font-medium text-[#536673] text-[15px]">
-                Man. Consultant , IAI
+                Managing Consultant , iAi
               </span>
             </div>
           }
