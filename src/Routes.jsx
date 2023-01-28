@@ -6,6 +6,7 @@ const About = lazy(() => import("@pages/About"));
 const Faq = lazy(() => import("@pages/FAQ"));
 const Blog = lazy(() => import("@pages/Blog"));
 const Contact = lazy(() => import("@pages/Contact"));
+const Judges = lazy(() => import("@pages/Judges"));
 const ApplicationForm = lazy(() => import("@pages/Apply"));
 import SuspenseComponent from "@components/SuspenseComponent";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/faq" element={<SuspenseComponent Component={Faq} />} />
           <Route path="/blogs" element={<SuspenseComponent Component={Blog} />} />
           <Route path="/contact-us" element={<SuspenseComponent Component={Contact} />} />
+          <Route path="/judges" element={<SuspenseComponent Component={Judges} />} />
           <Route path="/apply" element={<SuspenseComponent Component={ApplicationForm} />} />
 
           <Route path="/" element={<Navigate to="/home" />} />

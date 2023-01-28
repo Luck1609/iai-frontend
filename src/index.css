@@ -20,7 +20,7 @@ nav, button {
 }
 
 
-.progressPercent{
+.progressPercent {
 	font-weight: 600;
 	font-family:'Franklin Gothic Medium';
 	position: absolute;
@@ -31,9 +31,17 @@ nav, button {
 	text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
 }
 
-/* .error {
-	@apply border-b border-red-500
-} */
+.error {
+	@apply text-red-500
+}
+
+input.error {
+	@apply border-b border-red-500 bg-red-100 !important;
+}
+
+.error::placeholder {
+	@apply text-red-500
+}
 
 .yt-lite {
 	@apply w-[480px] h-[360px] m-auto

@@ -30,12 +30,13 @@ export default function PhoneNumberInput({ name, label = null, className, subCla
         fieldState: { error },
       }) => (
         <div className={`relative w-full ${className} duration-300`}>
-          <label className={`inline-block font-medium`} onClick={changeFocus}>{label}</label>
+          <label className={`inline-block font-medium ${error ? "error" : ""}`} onClick={changeFocus}>{label}</label>
 
           <Input
             country="GH"
             value={Array.isArray(value) ? "" : value}
             onChange={onChange} 
+            onBlur={onBlur}
             onFocus={changeFocus}
             className={`pl-3 ${subClassName} ${error ? "error" : ""}`}
             placeholder="+233550000000"

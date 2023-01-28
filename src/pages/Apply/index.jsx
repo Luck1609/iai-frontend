@@ -10,7 +10,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import HttpReq from "@helpers/axios";
 import { usePaystackPayment } from "react-paystack";
 import Helper from "@helpers/index";
-import guide from "@assets/iaminvestible-guide.pdf"
 
 const validations = [
   application_form_1_validation,

@@ -61,7 +61,7 @@ export default function ContactForm() {
           </form>
         </FormProvider>
 
-        <div className="absolute h-[500px] w-[520px] -right-36 -bottom-16 bg-contact bg-cover hidden lg:block"></div>
+        <div className="absolute h-[500px] w-[520px] -right-40 -bottom-16 bg-contact bg-cover hidden lg:block"></div>
       </div>
     </div>
   );

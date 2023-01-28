@@ -5,7 +5,7 @@ import {
   Select,
   InputLabel,
   FormControl,
-  FormHelperText,
+  // FormHelperText,
 } from "@mui/material";
 
 const SelectField = ({ name, options, label, className, containerClass }) => {
@@ -29,14 +29,15 @@ const SelectField = ({ name, options, label, className, containerClass }) => {
           className={`w-full ${containerClass}`}
           error={error}
         >
-          <InputLabel id={name}>{label}</InputLabel>
+          <InputLabel id={name} className={error ? "error" : ""}>{label}</InputLabel>
           <Select
             labelId={name}
             id={name}
             value={value}
             label={label}
             onChange={onChange}
-            className={className}
+            onBlur={onBlur}
+            className={`${className} ${ error ? "error" : "" }`}
           >
             {options.map(({ value, label }) => {
               return (
@@ -46,7 +47,7 @@ const SelectField = ({ name, options, label, className, containerClass }) => {
               );
             })}
           </Select>
-          {error && <FormHelperText>{error.message}</FormHelperText>}
+          {error && <span className="text-red-500 text-sm">{error.message}</span>}
         </FormControl>
       )}
     />

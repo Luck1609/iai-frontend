@@ -17,7 +17,8 @@ module.exports = {
       backgroundImage: {
         mechanic: "url('/img/mechanic_bg.jpg')",
         about: "url('/img/about_bg.jpg')",
-        contact: "url('/img/iaminvestible.png')",
+        contact: "url('/img/contact_bg.jpg')",
+        // contact: "url('/img/iaminvestible.png')",
         market: "url('/img/market_short.jpg')",
         staff: "url('/img/staff.jpg')",
         
