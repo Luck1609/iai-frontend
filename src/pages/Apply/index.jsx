@@ -62,15 +62,9 @@ export default function ApplicationForm() {
         reference,
         ...payload,
         amount: 150, 
-        action: () => {
-          reset()
-          setStep(0)
-          setSubmitting(true)
-        }
-      }
+      },
+      action: () => window.location.href = "/apply"
     })
-
-    // reset()
   }
 
   const onClose = (ref) => {

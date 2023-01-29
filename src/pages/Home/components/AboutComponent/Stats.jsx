@@ -11,7 +11,7 @@ export default function Stats() {
   })
 
   return (
-    <div className="lg:row-span-2 lg:p-20 grid grid-cols-2 grid-rows-2 relative before:absolute before:w-8 before:h-8 before:bg-white before:rounded-full before:top-[46%] before:left-[45.5%]  lg:before:top-[48%] lg:before:left-[47.5%] before:border-8 before:border-default-red">
+    <div className="lg:row-span-2 lg:p-20 grid grid-cols-2 grid-rows-2 relative before:absolute before:w-8 before:h-8 before:bg-white before:rounded-full before:top-[46%] before:left-[45.5%] md:before:top-[46%] md:before:left-[48%] lg:before:top-[48%] lg:before:left-[47.5%] before:border-8 before:border-default-red">
       <div className="w-full flex items-center justify-center text-white border-r border-white border-b">
         <div className="text-center p-3 lg:p-0  lg:w-4/5">
           <UserOcta className="m-auto mb-4" />
@@ -23,8 +23,8 @@ export default function Stats() {
       <div className="w-full flex  items-center justify-center text-white border-l border-white border-b">
         <div className="text-center p-3 lg:p-0">
           <Persons className="m-auto mb-4" />
-          <label className="font-medium">Projected Enterprises to be Trained</label>
-          <CountUp end={2000} duration={2} enableScrollSpy className="text-xl lg:text-3xl block mt-10" />
+          <label className="font-medium">Projected Enterprises to receive grants</label>
+          <CountUp end={200} duration={2} enableScrollSpy className="text-xl lg:text-3xl block mt-10" />
         </div>
       </div>
 

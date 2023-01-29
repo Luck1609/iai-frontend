@@ -8,9 +8,9 @@ export default function CallToAction() {
 
   return (
     <div className="flex justify-center">
-      <div className="contained bg-default-blue flex justify-center py-20 rounded-t-2xl">
-        <div className="lg:w-3/5">
-          <h1 className="text-xl text-center lg:text-3xl font-bold leading-snug mx-auto mb-4 uppercase text-white lg:w-[420px] lg:leading-relaxed">
+      <div className="contained bg-default-blue flex flex-col justify-center py-20 rounded-t-2xl">
+        <div className="lg:w-3/5 m-auto">
+          <h1 className="text-xl text-center lg:text-3xl font-bold leading-snug mx-auto mb-4 uppercase text-white xs:px-8  lg:w-[420px] lg:leading-relaxed">
             Empowering innovative businesses for growth.
           </h1>
 
@@ -39,10 +39,12 @@ export default function CallToAction() {
             </a>
           </div>
 
+        </div>
           <LiteYouTubeEmbed
             id="aqVzCDbLwb0"
+            title="Introduction to be investible"
+            iframeClass="w-full lg:w-[740px] lg:h-[560px]"
           />
-        </div>
       </div>
     </div>
   );

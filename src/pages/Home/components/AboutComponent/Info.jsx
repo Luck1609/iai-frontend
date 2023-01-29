@@ -3,7 +3,7 @@ import LinkItem from "@components/Link";
 
 export default function Info() {
   return (
-    <div className="text-white text-center lg:text-left px-5 lg:px-0">
+    <div className="text-white text-center lg:text-left px-5 lg:px-0 mb-14">
       <h3 className="text-xl lg:text-3xl font-semibold mb-5 uppercase">
         What is I Am Investible
       </h3>

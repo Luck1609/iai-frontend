@@ -142,6 +142,9 @@ export default function ApplicationForm2() {
         placeholder="Simple description of what your company does  e.g Ecommerce website for trading agricultural fields"
         subClassName="border-b border-input-border"
       />
+      
+
+      <UploadComponent />
 
       <SelectField
         name="businessStage"
@@ -170,8 +173,6 @@ export default function ApplicationForm2() {
           },
         ]}
       />
-
-      <UploadComponent />
 
     </>
   );

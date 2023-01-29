@@ -44,11 +44,11 @@ input.error {
 }
 
 .yt-lite {
-	@apply w-full h-[200px] lg:w-[480px] lg:h-[360px] m-auto relative;
+	@apply w-full xs:w-11/12 min-h-[340px] h-[50vh] lg:w-[740px] lg:h-[560px] m-auto relative bg-cover;
 }
 
 .yt-lite.lyt-activated {
-	@apply  w-full h-[200px] lg:w-[560px] lg:h-[315px] m-auto
+	@apply  w-[328px] h-[315px] lg:w-[740px] lg:h-[560px] m-auto
 }
 
 .yt-lite > .lty-playbtn,

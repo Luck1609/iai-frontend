@@ -5,7 +5,7 @@ export default function FaqInfo() {
   return (
     <div className="bg-[#FCF0F0] -mt-10 max-w-6xl m-auto rounded-xl">
       <h2 className="text-3xl font-semibold text-heading2 mb-8 p-10">
-        Participants Criteria
+        How to Participate
       </h2>
 
       <div className="py-10 p-5 lg:p-10 rounded-xl bg-white mx-5 lg:mx-0">
@@ -39,7 +39,7 @@ export default function FaqInfo() {
         <p className="p-4">
           <label className="font-semibold text-md">Step 5:</label>
 
-          <div className="">Pay your processing fee and submit</div>
+          <div className="">Pay your processing fee of GH₵150 and submit your application</div>
         </p>
       </div>
 {/* 
