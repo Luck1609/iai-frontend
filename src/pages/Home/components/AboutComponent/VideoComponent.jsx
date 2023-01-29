@@ -4,7 +4,7 @@ import { images } from "@assets/img/images";
 
 export default function VideoComponent({ position }) {
   return (
-    <div className="relative w-11/12 mx-auto lg:w-full hidden">
+    <div className="relative w-11/12 mx-auto lg:w-full">
       <img src={images.video_bg} alt="" className="" />
       {/* <Play
         className={`absolute ${position ?? "top-40 left-80"} z-10 h-8 w-8`}

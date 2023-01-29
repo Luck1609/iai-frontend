@@ -47,8 +47,8 @@ export default function ApplicationForm() {
     currency: 'GHS',
     email: watch('email'),
     amount: 150 * 100,
-    // publicKey: 'pk_live_7a865b13cdd74cb21d63f508c64711d73d9175df'
-    publicKey: 'pk_test_990efee3f71a1bbe44dced41031d573c8be68217'
+    publicKey: 'pk_live_7a865b13cdd74cb21d63f508c64711d73d9175df'
+    // publicKey: 'pk_test_990efee3f71a1bbe44dced41031d573c8be68217'
   })
 
   const onSuccess = ({ reference }) => {
@@ -107,7 +107,7 @@ export default function ApplicationForm() {
             <p className="">
               <a
                 href={Helper.env.VITE_DOWNLOAD_GUIDE}
-                // target="_blank"
+                target="_self"
                 className="text-red-text"
                 download
               >

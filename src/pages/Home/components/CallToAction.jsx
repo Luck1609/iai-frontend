@@ -10,7 +10,7 @@ export default function CallToAction() {
     <div className="flex justify-center">
       <div className="contained bg-default-blue flex flex-col justify-center py-20 rounded-t-2xl">
         <div className="lg:w-3/5 m-auto">
-          <h1 className="text-xl text-center lg:text-3xl font-bold leading-snug mx-auto mb-4 uppercase text-white xs:px-8  lg:w-[420px] lg:leading-relaxed">
+          <h1 className="text-xl text-center lg:text-3xl font-bold leading-snug mx-auto mb-4 uppercase text-white xs:px-8 md:px-0 lg:w-[450px] lg:leading-relaxed">
             Empowering innovative businesses for growth.
           </h1>
 
@@ -26,7 +26,7 @@ export default function CallToAction() {
               className="animate-pulse border-primary text-primary hover:bg-white h-14 lg:mr-8 w-44"
             />
 
-            <a href={Helper.env.VITE_DOWNLOAD_GUIDE} className="block">
+            <a href={Helper.env.VITE_DOWNLOAD_GUIDE} target="_self" className="block" download>
               <Btn
                 content={
                   <span className="flex items-center">
@@ -41,7 +41,7 @@ export default function CallToAction() {
 
         </div>
           <LiteYouTubeEmbed
-            id="aqVzCDbLwb0"
+            id="WkozOAkMV_g"
             title="Introduction to be investible"
             iframeClass="w-full lg:w-[740px] lg:h-[560px]"
           />

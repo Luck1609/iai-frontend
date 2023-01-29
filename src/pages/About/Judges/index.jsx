@@ -21,8 +21,8 @@ export default function Judges() {
         img={images.judge_2_short}
         id="#horseman"
         title="CEO, Horseman"
-        name="Tornyi Senayah"
-        content="Tornyi Senayah is a Ghanaian entrepreneur and the founder/CEO of Horseman Shoes, a footwear manufacturing company he established in 2010."
+        name="Tonyi Senayah"
+        content="Tonyi Senayah is a Ghanaian entrepreneur and the founder/CEO of Horseman Shoes, a footwear manufacturing company he established in 2010."
       />
 
       <JudgeCard

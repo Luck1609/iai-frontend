@@ -5,8 +5,9 @@ import Card from "./Card";
 export default function JudgesComponent() {
   return (
     <div className="w-full m-auto bg-[#FCF0F0] pt-16 lg:py-28">
-
-      <h1 className="text-2xl lg:text-4xl font-bold text-red-text text-center p-10">Meet Our Judges</h1>
+      <h1 className="text-2xl lg:text-4xl font-bold text-red-text text-center p-10">
+        Meet Our Judges
+      </h1>
 
       <div className="max-w-5xl m-auto grid gap-16">
         <Card
@@ -42,7 +43,7 @@ export default function JudgesComponent() {
           img={images.judge_2}
           id="horseman"
           title="CEO, Horseman"
-          name="Tornyi Senayah"
+          name="Tonyi Senayah"
           content={
             <>
               <p className="leading-8 lg:leading-relaxed text-justify">
@@ -97,7 +98,6 @@ export default function JudgesComponent() {
           }
         />
 
-
         <Card
           img={images.judge_3}
           title="Managing Consultant, iAi"
@@ -147,19 +147,57 @@ export default function JudgesComponent() {
           content={
             <>
               <p className="leading-8 lg:leading-relaxed text-justify">
-                Ekow is named amongst the 100 Most Influential Young Africans, 50 Most Influential Young Ghanaians, 60 Young Leaders in Ghana by CocaCola, Top 100 Speakers in Ghana and a Finalist Nominee for the African Leadership Academy Anzisha Prize for African Entrepreneurship Catalyst Award sponsored by MasterCard Foundation mostly for his extensive work on student & youth development, entrepreneurship development, women economic empowerment, gender mainstreaming, capacity building in Gender, Diversity and Inclusion (DEI) and Environment, Social and Governance (ESG) and social enterprise policy development and advocacy.
+                Ekow is named amongst the 100 Most Influential Young Africans,
+                50 Most Influential Young Ghanaians, 60 Young Leaders in Ghana
+                by CocaCola, Top 100 Speakers in Ghana and a Finalist Nominee
+                for the African Leadership Academy Anzisha Prize for African
+                Entrepreneurship Catalyst Award sponsored by MasterCard
+                Foundation mostly for his extensive work on student & youth
+                development, entrepreneurship development, women economic
+                empowerment, gender mainstreaming, capacity building in Gender,
+                Diversity and Inclusion (DEI) and Environment, Social and
+                Governance (ESG) and social enterprise policy development and
+                advocacy.
               </p>
               <p className="leading-8 lg:leading-relaxed text-justify mt-8">
-                Ekow is an internationally certified coach by International Coaching Federation (ICF) and Managing Consultant for Ekow Mensah Consulting working with notable organizations such British Council, Development Bank Ghana, Ghana National Chamber of Commerce, Ashesi University, Invest in Africa, JACCD Design Institute Africa, KAIPTC, Ghana Tech Lab, MEST, Design & Technology Institute, Kosmos Innovation Center, VLISCO, BHEARD and several others to design, implement, monitor and evaluate programs around youth development, gender equality, diversity and inclusion, agribusiness development, entrepreneurship, design thinking and innovation.
+                Ekow is an internationally certified coach by International
+                Coaching Federation (ICF) and Managing Consultant for Ekow
+                Mensah Consulting working with notable organizations such
+                British Council, Development Bank Ghana, Ghana National Chamber
+                of Commerce, Ashesi University, Invest in Africa, JACCD Design
+                Institute Africa, KAIPTC, Ghana Tech Lab, MEST, Design &
+                Technology Institute, Kosmos Innovation Center, VLISCO, BHEARD
+                and several others to design, implement, monitor and evaluate
+                programs around youth development, gender equality, diversity
+                and inclusion, agribusiness development, entrepreneurship,
+                design thinking and innovation.
               </p>
               <p className="leading-8 lg:leading-relaxed text-justify mt-8">
-                As the CEO of EMI Group Africa; Ekow oversees subsidiaries and initiatives including but not limited to The African Network of Entrepreneurs (TANOE) organizers of Ghana Startup Awards and Startup Club 100, The WomanRising Network, IConceptsPR, TechWomen 100, CareerCare Africa, JobHanta, EMILuxe Center, Business Growth Monitor, HustleAid amongst several others. 
+                As the CEO of EMI Group Africa; Ekow oversees subsidiaries and
+                initiatives including but not limited to The African Network of
+                Entrepreneurs (TANOE) organizers of Ghana Startup Awards and
+                Startup Club 100, The WomanRising Network, IConceptsPR,
+                TechWomen 100, CareerCare Africa, JobHanta, EMILuxe Center,
+                Business Growth Monitor, HustleAid amongst several others.
               </p>
               <p className="leading-8 lg:leading-relaxed text-justify mt-8">
-                As an international consultant for 10 years for DWELLWORKS based in USA, Ekow has worked with Expatriates and business leaders in top international organizations such as Heineken and Guinness, Unilever in Ghana, Sierra Leone and Liberia on intercultural fluency, gender mainstreaming, organizational development, leadership and team building.
+                As an international consultant for 10 years for DWELLWORKS based
+                in USA, Ekow has worked with Expatriates and business leaders in
+                top international organizations such as Heineken and Guinness,
+                Unilever in Ghana, Sierra Leone and Liberia on intercultural
+                fluency, gender mainstreaming, organizational development,
+                leadership and team building.
               </p>
               <p className="leading-8 lg:leading-relaxed text-justify mt-8">
-                As a mentor, Ekow runs the Ambitious Students’ Mentorship Program with over 240 students in 19 universities in Ghana and 50 other mentors building the capacity of the students and guiding them to make the right career choices and make them job-ready. Over the years, Ekow has been a mentor on several programs and organizations including Ashesi University, YALI RLC West Africa Emerging Leaders Program, EU: Africa Post Crisis Journey, Kosmos Innovation Center Agritech Challenge, Founder’s Institute and Lancaster University.
+                As a mentor, Ekow runs the Ambitious Students’ Mentorship
+                Program with over 240 students in 19 universities in Ghana and
+                50 other mentors building the capacity of the students and
+                guiding them to make the right career choices and make them
+                job-ready. Over the years, Ekow has been a mentor on several
+                programs and organizations including Ashesi University, YALI RLC
+                West Africa Emerging Leaders Program, EU: Africa Post Crisis
+                Journey, Kosmos Innovation Center Agritech Challenge, Founder’s
+                Institute and Lancaster University.
               </p>
             </>
           }

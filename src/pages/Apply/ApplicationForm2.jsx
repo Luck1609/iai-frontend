@@ -63,6 +63,10 @@ export default function ApplicationForm2() {
             value: "Limited by Guarantee",
           },
           {
+            label: "Sole Proprietor",
+            value: "Sole Proprietor",
+          },
+          {
             label: "Not Registered",
             value: "Not Registered",
           },
